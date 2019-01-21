@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Greenpal</title>
-  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="author" content="Ali Sufyan">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<title>Greenpal Supplies</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
   <%= csrf_meta_tags %>
 </head>
 <body>

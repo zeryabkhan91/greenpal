@@ -1,0 +1,316 @@
+<div id="wrapper">
+    <div class="main_navbar_bg_clr">
+    <div class="main_navbar_bg_container">
+        <div class="nabar_left_part">
+            <a href="#">
+                <%= image_tag "main-logo.png", alt: "main logo"%>
+            </a>
+        </div>
+        <div class="nabar_right_part">
+            <ul>
+                <li><a href="#">Homeowner Center</a> </li>
+                <li><a href="#">Lawn Care Business Guides</a> </li>
+                <li><a href="#">How GreenPal Works</a> </li>
+                <div class="navbar_logig_btn">
+                    <a href="#">Login</a>
+                </div>
+            </ul>
+            
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Homeowner Center</a>
+            <a href="#">Lawn Care Business Guides</a>
+            <a href="#">How GreenPal Works</a>
+            <div class="left_saidbar only_mobile">
+                    <ul>
+                        <li><a href="#"> <%= image_tag "equipment.svg", class: "non_hover_e svg_custom pad_r_e_7", alt: "2 icon" %> Equipment</a></li>
+                        <li><a href="#"> <%= image_tag "supplies.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Supplies</a></li>
+                        <li><a href="#"> <%= image_tag "legal.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Legal & Insurance</a></li>
+                        <li><a href="#"> <%= image_tag "software.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Software</a></li>
+                        <li><a href="#"> <%= image_tag "accessories.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Accessories</a></li>
+                        <li><a href="#"> <%= image_tag "Plant_matetial.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Plant Material</a></li>
+                        <li><a href="#"> <%= image_tag "chemical.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Chemical & Fert</a></li>
+                        <li><a href="#"> <%= image_tag "vhecile.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Vehicles</a></li>
+                        <li><a href="#"> <%= image_tag "vhecile.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon" %> Questions</a></li>
+                    </ul>
+        
+            </div>
+            
+          </div>
+          <div class="mobile_menu">
+              <span onclick="openNav()">
+                    <%= image_tag "icon-responcive-menu.png"%>  
+              </span>
+          </div>
+          
+        <div class="clear"></div>
+    </div>
+    
+    </div>
+    <div class="Legal_Insurance_text_mob">
+        <h3>Legal and Insurance</h3>
+    </div>
+    <div class="main_body_container">
+        <div class="left_saidbar only_desktop">
+            <ul >
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "equipment.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "20" %>
+                        <%= image_tag "equipment-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "20" %> 
+                        Equipment
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "supplies.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        <%= image_tag "supplies-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        Supplies
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "legal.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        <%= image_tag "legal-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        Legal & Insurance
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "software.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        <%= image_tag "software-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        Software
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#"> 
+                        <%= image_tag "accessories.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "19" %> 
+                        <%= image_tag "accessories-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "19" %> 
+                        Accessories
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "Plant_matetial.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "15" %> 
+                        <%= image_tag "Plant_matetial-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "15" %> 
+                        Plant Material
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "chemical.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "15" %> 
+                        <%= image_tag "chemical-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "15" %> 
+                        Chemical & Fert
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "vhecile.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        <%= image_tag "vhecile-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "16" %> 
+                        Vehicles
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "other.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "21" %> 
+                        <%= image_tag "other-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "21" %> 
+                        Other
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_anchor" href="#">
+                        <%= image_tag "question.svg", class: "non-hover svg_custom pad_r_e_7", alt: "2 icon", width: "18"  %> 
+                        <%= image_tag "question-s.svg", class: "hover_menu svg_custom pad_r_e_7", alt: "2 icon", width: "18"  %> 
+                        Questions
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        
+        <div class="right_main_inner_part">
+            <div class="right_main_inner_part_heading_part">
+                <h3><%= image_tag "greenpal.png", height: "22", width: "160" %>Partners Program</h3>
+                <h5>We're hooking you up</h5>
+                <p>Being a GreenPal vendor <span class="font_b_span">has its perks,</span> and we're sharing the love with sweet discounts on some the best manufacturers, and popular services you need to run a successful landscaping company.</p>
+            </div>
+            
+            <div class="inner_box_with_logo_sec">
+                <div class="inner_box_with_logo_one">
+                    <%= image_tag "red-logo-1.png", class: "box_logo" %>
+                    <div class="redTime">
+                        <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 18 times</h4>
+                        <div class="small_head">
+                            <h4>What's the deal</h4>
+                        </div>
+                        <p>We are Granz Power Equipment, a proud dealer of Ariens products - machines dependable and durable enough to carry the Ariens name. We serve the Salem.</p>
+                        <div class="view_this_park_btn">
+                            <a href="#">View this Perk</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="inner_box_with_logo_tow">
+                    <%= image_tag "red-logo-2.png", class: "box_logo", height: "50" %>
+                    <div class="redTime">
+                            <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 16 times</h4>
+                            <div class="small_head">
+                                <h4>What's the deal</h4>
+                            </div>
+                            <p>Billy Goat Industries, located outside of Kansas City, Missouri, is the premier manufacturer of specialty turf products with a reputation for innovation-</p>
+                            <div class="view_this_park_btn">
+                                <a href="#">View this Perk</a>
+                            </div>
+    
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="inner_box_with_logo_one">
+                        <%= image_tag "red-logo-3.png", class: "box_logo" %>
+                        <div class="redTime">
+                            <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 19 times</h4>
+                            <div class="small_head">
+                                <h4>What's the deal</h4>
+                            </div>
+                            <p>For over 110 years, the iconic Champion® brand has been a world leader in the manufacture of spark plugs for every kind of combustion engine. From..</p>
+                            <div class="view_this_park_btn">
+                                <a href="#">View this Perk</a>
+                            </div>
+    
+                        </div>
+                </div>
+                <div class="inner_box_with_logo_tow">
+                    <%= image_tag "red-logo-4.png", class: "box_logo" %>
+                    <div class="redTime">
+                            <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 14 times</h4>
+                            <div class="small_head">
+                                <h4>What's the deal</h4>
+                            </div>
+                            <p>Schiller Grounds Care, Inc. designs and manufactures commercial and residential gardening and turf care equipment. Its product lineup includes zero-turn, stand-on.</p>
+                            <div class="view_this_park_btn">
+                                <a href="#">View this Perk</a>
+                            </div>
+    
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="inner_box_with_logo_one">
+                        <%= image_tag "red-logo-5.png", class: "box_logo" %>
+                        <div class="redTime">
+                            <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 19 times</h4>
+                            <div class="small_head">
+                                <h4>What's the deal</h4>
+                            </div>
+                            <p>For over 110 years, the iconic Champion® brand has been a world leader in the manufacture of spark plugs for every kind of combustion engine. From..</p>
+                            <div class="view_this_park_btn">
+                                <a href="#">View this Perk</a>
+                            </div>
+    
+                        </div>
+                </div>
+                <div class="inner_box_with_logo_tow">
+                    <%= image_tag "red-logo-6.png", class: "box_logo" %>
+                    <div class="redTime">
+                            <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 17 times</h4>
+                            <div class="small_head">
+                                <h4>What's the deal</h4>
+                            </div>
+                            <p>We’re CRAFTSMAN®, an authentic American icon. For nearly a century we’ve been the brand homeowners, home builders, auto enthusiasts, and master mechanics...</p>
+                            <div class="view_this_park_btn">
+                                <a href="#">View this Perk</a>
+                            </div>
+    
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="inner_box_with_logo_one">
+                    <%= image_tag "red-logo-7.png", class: "box_logo" %>
+                    <div class="redTime">
+                        <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 18 times</h4>
+                        <div class="small_head">
+                            <h4>What's the deal</h4>
+                        </div>
+                        <p>For more than 40 years, ECHO Incorporated has been a worldwide leader in the development and manufacture of professional-grade, hand-held outdoor power equipment for both </p>
+                        <div class="view_this_park_btn">
+                            <a href="#">View this Perk</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="inner_box_with_logo_tow">
+                    <%= image_tag "red-logo-8.png", class: "box_logo" %>
+                    <div class="redTime">
+                            <h4><%= image_tag "Star.svg", class: "pad_r_e_5" %>Redeemed 1 times</h4>
+                            <div class="small_head">
+                                <h4>What's the deal</h4>
+                            </div>
+                            <p>For homeowners seeking a reliable mower that is budget-friendly and back to basics, Lawn-Boy builds on the quality and craftsmanship that made Lawn-Boy a backyard icon. This mower is..</p>
+                            <div class="view_this_park_btn">
+                                <a href="#">View this Perk</a>
+                            </div>
+    
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+            </div>  
+        </div>
+        <div class="clear"></div>
+        <div class="footer_top_bg_sec only_desktop">
+            <p>Want to share a discount  with the GreenPal <br>
+            community of <span class="blod_f_e">22,345 landscapers?</span>
+            </p>
+            <div class="submit_the_details_btn">
+                <a href="#">Submit the details here <%= image_tag "arrow.svg", class: "arrow_right", width: "14px", alt: "2 icon" %> </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer_top_bg_sec only_mobile">
+            <p>Want to share a discount  with the GreenPal <br>
+            community of <span class="blod_f_e">22,345 landscapers?</span>
+            </p>
+            <div class="submit_the_details_btn">
+                <a href="#">Submit the details here <%= image_tag "arrow.svg", class: "arrow_right", width: "14px", alt: "2 icon" %> </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    <div class="footer_sec">
+        <div class="imga">
+                <%= image_tag "footer_bg.png" %>
+        </div>
+        <div class="custom_container">
+            <div class="footer_copy_right_left">
+                <p>© 2018 GreenPal Co. All rights reserved. </p>
+                <p>Your use of this website constitutes acceptance of <a href="#">GreenPal's Terms and Conditions</a></p>
+            </div>
+            <div class="footer_social_icon">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                                <i class="fa fa-pinterest-p"  aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+                
+        </div>
+    </div>
+</div>

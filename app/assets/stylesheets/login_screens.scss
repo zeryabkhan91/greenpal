@@ -1,1075 +1,1075 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-body {
-    line-height: 1;
-}
-ol, ul {
-    list-style: none;
-}
-blockquote, q {
-    quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-/*----- Reset End -----*/
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed,
+// figure, figcaption, footer, header, hgroup,
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video {
+//     margin: 0;
+//     padding: 0;
+//     border: 0;
+//     font-size: 100%;
+//     font: inherit;
+//     vertical-align: baseline;
+// }
+// article, aside, details, figcaption, figure,
+// footer, header, hgroup, menu, nav, section {
+//     display: block;
+// }
+// body {
+//     line-height: 1;
+// }
+// ol, ul {
+//     list-style: none;
+// }
+// blockquote, q {
+//     quotes: none;
+// }
+// blockquote:before, blockquote:after,
+// q:before, q:after {
+//     content: '';
+//     content: none;
+// }
+// table {
+//     border-collapse: collapse;
+//     border-spacing: 0;
+// }
+// /*----- Reset End -----*/
 
-/*----- Proxima Nova -----*/
-@font-face {
-    font-family: 'proxima_nova_rgbold';
-    src: font-url('proxima_nova_bold-webfont.woff2') format('woff2'),
-    font-url('proxima_nova_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'proxima_novalight';
-    src: font-url('proxima_nova_light-webfont.woff2') format('woff2'),
-    font-url('proxima_nova_light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: font-url('proxima_nova_regular-webfont.woff2') format('woff2'),
-    font-url('proxima_nova_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'proxima_novasemibold';
-    src: font-url('proxima_nova_semi_bold-webfont.woff2') format('woff2'),
-    font-url('proxima_nova_semi_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-/*----- Proxima Nova -----*/
+// /*----- Proxima Nova -----*/
+// @font-face {
+//     font-family: 'proxima_nova_rgbold';
+//     src: font-url('proxima_nova_bold-webfont.woff2') format('woff2'),
+//     font-url('proxima_nova_bold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'proxima_novalight';
+//     src: font-url('proxima_nova_light-webfont.woff2') format('woff2'),
+//     font-url('proxima_nova_light-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'proxima_nova_rgregular';
+//     src: font-url('proxima_nova_regular-webfont.woff2') format('woff2'),
+//     font-url('proxima_nova_regular-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// @font-face {
+//     font-family: 'proxima_novasemibold';
+//     src: font-url('proxima_nova_semi_bold-webfont.woff2') format('woff2'),
+//     font-url('proxima_nova_semi_bold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+// /*----- Proxima Nova -----*/
 
-body {
-    font-size: 16px;
-    color: #000000;
-    background: #fff;
-    font-family: 'proxima_nova_rgregular';
-}
-h1, h2, h3, h4, h5, h6 {
+// body {
+//     font-size: 16px;
+//     color: #000000;
+//     background: #fff;
+//     font-family: 'proxima_nova_rgregular';
+// }
+// h1, h2, h3, h4, h5, h6 {
 
-}
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'proxima_nova_rgbold';
-}
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'proxima_nova_rgbold';
-}
-h3 {
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'proxima_novasemibold';
-}
-h4 {
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'proxima_novasemibold';
-}
-h5 {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'proxima_novasemibold';
-}
-input:focus {
-    outline: none;
-}
-input[type='checkbox'] {
-    width: 20px;
-    height: 20px;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: #52b5f9;
-}
-a:hover {
-    text-decoration: none;
-}
-.clear {
-    margin: 0;
-    padding: 0;
-    clear: both;
-}
+// }
+// h1 {
+//     font-size: 28px;
+//     font-weight: bold;
+//     font-family: 'proxima_nova_rgbold';
+// }
+// h2 {
+//     font-size: 24px;
+//     font-weight: bold;
+//     font-family: 'proxima_nova_rgbold';
+// }
+// h3 {
+//     font-size: 22px;
+//     font-weight: bold;
+//     font-family: 'proxima_novasemibold';
+// }
+// h4 {
+//     font-size: 18px;
+//     font-weight: bold;
+//     font-family: 'proxima_novasemibold';
+// }
+// h5 {
+//     font-size: 16px;
+//     font-weight: bold;
+//     font-family: 'proxima_novasemibold';
+// }
+// input:focus {
+//     outline: none;
+// }
+// input[type='checkbox'] {
+//     width: 20px;
+//     height: 20px;
+//     margin: 0;
+// }
+// a {
+//     text-decoration: none;
+//     color: #52b5f9;
+// }
+// a:hover {
+//     text-decoration: none;
+// }
+// .clear {
+//     margin: 0;
+//     padding: 0;
+//     clear: both;
+// }
 
-#MainWrapper {
-    width: 100%;
-}
-.LoginLeftMain {
-    float: left;
-    background: #fff;
-    width: 50%;
-}
-.LeftSide {
-    padding-left: 110px;
-    padding-top: 70px;
-    width: 405px;
-}
-.Logo {
-    background-image: asset-url("logo.png");
-    width: 234px;
-    height: 37px;
-    cursor: pointer;
-}
-.WelcomeHeading {
+// #MainWrapper {
+//     width: 100%;
+// }
+// .LoginLeftMain {
+//     float: left;
+//     background: #fff;
+//     width: 50%;
+// }
+// .LeftSide {
+//     padding-left: 110px;
+//     padding-top: 70px;
+//     width: 405px;
+// }
+// .Logo {
+//     background-image: asset-url("logo.png");
+//     width: 234px;
+//     height: 37px;
+//     cursor: pointer;
+// }
+// .WelcomeHeading {
 
-}
-.WelcomeHeading h1 {
-    padding-top: 80px;
-}
-.WelcomeHeading p {
-    color: #e86352;
-    line-height: 21px;
-    padding-top: 30px;
-    letter-spacing: 0.6px;
-    display: none;
-}
-.WelcomeHeading a.EmailInText {
-    color: #52b5f9;
-    font-family: 'proxima_novasemibold';
-}
-.LoginForm {
-    width: 100%;
-}
-.Email {
-    margin-top: 30px;
-}
-.Email label {
-    font-size: 18px;
-    color: #343434;
-    font-family: 'proxima_novasemibold';
-}
-.Email input {
-    width: 95.5%;
-    margin-top: 15px;
-    height: 50px;
-    border: 1px solid  #dbdbdb;
-    font-size: 17px;
-    padding-left: 15px;
-    border-radius: 2px;
-}
-.CheckboxPassword {
-    margin-top: 15px;
-    width: 100%;
-}
-.CheckboxPassword label {
-    position: relative;
-    top: -5px;
-    margin-left: 10px;
-    color: #8d8d8d;
-}
-.CheckboxPassword a.ForgottenPassword {
-    float: right;
-    color: #52b5f9;
-    line-height: 18px;
-}
-.LoginBtn {
-    width: 100%;
-    margin-top: 30px;
-}
-.BlueButton {
-    background: #52b5f9;
-    font-size: 18px;
-    font-family: 'proxima_nova_rgbold';
-    border-radius: 2px;
-    height: 52px;
-    color: #fff;
-    width: 100%;
-    display: block;
-    text-align: center;
-    line-height: 52px;
-    transition: 0.4s ease-in-out;
-    -webkit-transition: 0.4s ease-in-out;
-    -ms-transition: 0.4s ease-in-out;
-}
-.BlueButton:hover {
-    background: #4d97d6;
-}
-.DontHaveAnAccount {
-    text-align: center;
-    color: #8d8d8d;
-    margin-top: 30px;
-}
-.TitleAccount {
-    float: left;
-    padding-left: 27%;
-}
-.TitleAccount p {
-    margin-bottom: 5px;
-    float: left;
-}
-.DontHaveAnAccount span {
-    float: left;
-    margin-top: 5px;
-    margin-left: 3px;
-}
-.DontHaveAnAccount a {
-    color: #52b5f9;
-    float: left;
-    width: 100%;
-}
-.LoginRightMorning {
-    background-image: asset-url("mornig-web.png");
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 768px;
-    float: right;
-     background-size: cover;
-    background-position: center center;
+// }
+// .WelcomeHeading h1 {
+//     padding-top: 80px;
+// }
+// .WelcomeHeading p {
+//     color: #e86352;
+//     line-height: 21px;
+//     padding-top: 30px;
+//     letter-spacing: 0.6px;
+//     display: none;
+// }
+// .WelcomeHeading a.EmailInText {
+//     color: #52b5f9;
+//     font-family: 'proxima_novasemibold';
+// }
+// .LoginForm {
+//     width: 100%;
+// }
+// .Email {
+//     margin-top: 30px;
+// }
+// .Email label {
+//     font-size: 18px;
+//     color: #343434;
+//     font-family: 'proxima_novasemibold';
+// }
+// .Email input {
+//     width: 95.5%;
+//     margin-top: 15px;
+//     height: 50px;
+//     border: 1px solid  #dbdbdb;
+//     font-size: 17px;
+//     padding-left: 15px;
+//     border-radius: 2px;
+// }
+// .CheckboxPassword {
+//     margin-top: 15px;
+//     width: 100%;
+// }
+// .CheckboxPassword label {
+//     position: relative;
+//     top: -5px;
+//     margin-left: 10px;
+//     color: #8d8d8d;
+// }
+// .CheckboxPassword a.ForgottenPassword {
+//     float: right;
+//     color: #52b5f9;
+//     line-height: 18px;
+// }
+// .LoginBtn {
+//     width: 100%;
+//     margin-top: 30px;
+// }
+// .BlueButton {
+//     background: #52b5f9;
+//     font-size: 18px;
+//     font-family: 'proxima_nova_rgbold';
+//     border-radius: 2px;
+//     height: 52px;
+//     color: #fff;
+//     width: 100%;
+//     display: block;
+//     text-align: center;
+//     line-height: 52px;
+//     transition: 0.4s ease-in-out;
+//     -webkit-transition: 0.4s ease-in-out;
+//     -ms-transition: 0.4s ease-in-out;
+// }
+// .BlueButton:hover {
+//     background: #4d97d6;
+// }
+// .DontHaveAnAccount {
+//     text-align: center;
+//     color: #8d8d8d;
+//     margin-top: 30px;
+// }
+// .TitleAccount {
+//     float: left;
+//     padding-left: 27%;
+// }
+// .TitleAccount p {
+//     margin-bottom: 5px;
+//     float: left;
+// }
+// .DontHaveAnAccount span {
+//     float: left;
+//     margin-top: 5px;
+//     margin-left: 3px;
+// }
+// .DontHaveAnAccount a {
+//     color: #52b5f9;
+//     float: left;
+//     width: 100%;
+// }
+// .LoginRightMorning {
+//     background-image: asset-url("mornig-web.png");
+//     background-repeat: no-repeat;
+//     width: 50%;
+//     height: 768px;
+//     float: right;
+//      background-size: cover;
+//     background-position: center center;
 
-}
-.LoginRightAfternoon {
-    background-image: asset-url("afternoon-web.png");
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 768px;
-    float: right;
-     background-size: cover;
-    background-position: center center;
+// }
+// .LoginRightAfternoon {
+//     background-image: asset-url("afternoon-web.png");
+//     background-repeat: no-repeat;
+//     width: 50%;
+//     height: 768px;
+//     float: right;
+//      background-size: cover;
+//     background-position: center center;
 
-}
-.LoginRightEvening {
-    background-image: asset-url("evening-web.png");
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 768px;
-    float: right;
-     background-size: cover;
-    background-position: center center;
+// }
+// .LoginRightEvening {
+//     background-image: asset-url("evening-web.png");
+//     background-repeat: no-repeat;
+//     width: 50%;
+//     height: 768px;
+//     float: right;
+//      background-size: cover;
+//     background-position: center center;
 
-}
-/*-- Login end --*/
+// }
+// /*-- Login end --*/
 
-/*-- Forgot Password start --*/
-.ForgotRightMain {
-    background-image: asset-url("forgot-h-web.png"); /*-- forgot-t-web --*/
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 768px;
-    float: right;
-     background-size: cover;
-    background-position: center center;
-}
-.ForgotHeading {
+// /*-- Forgot Password start --*/
+// .ForgotRightMain {
+//     background-image: asset-url("forgot-h-web.png"); /*-- forgot-t-web --*/
+//     background-repeat: no-repeat;
+//     width: 50%;
+//     height: 768px;
+//     float: right;
+//      background-size: cover;
+//     background-position: center center;
+// }
+// .ForgotHeading {
 
-}
-.ForgotHeading h1 {
-    padding-top: 125px;
-}
-.ForgotHeading p {
-    color: #e86352;
-    line-height: 21px;
-    padding-top: 30px;
-    letter-spacing: 0.6px;
-    display: none;
-}
-.ForgotHeading a.EmailInText {
-    color: #52b5f9;
-    font-family: 'proxima_novasemibold';
-}
-.ForgotHeading h1 img {
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 15px;
-}
-.Returnto {
-    text-align: center;
-    color: #8d8d8d;
-    margin-top: 30px;
-}
-.Error {
-    color: #e86352;
-    line-height: 21px;
-    padding-top: 10px;
-    letter-spacing: 0.6px;
-}
-.GreatHeading h1 {
-    font-size: 48px;
-    color: #99c540;
-    padding-top: 165px;
-}
-.GreatHeading p.GreatBold {
-    padding-top: 10px;
-    font-size: 27px;
-    font-family: 'proxima_nova_rgbold';
-}
-.GreatHeading p.GreatText {
-    padding-top: 10px;
-    font-size: 27px;
-}
-/*-- Forgot Password start --*/
+// }
+// .ForgotHeading h1 {
+//     padding-top: 125px;
+// }
+// .ForgotHeading p {
+//     color: #e86352;
+//     line-height: 21px;
+//     padding-top: 30px;
+//     letter-spacing: 0.6px;
+//     display: none;
+// }
+// .ForgotHeading a.EmailInText {
+//     color: #52b5f9;
+//     font-family: 'proxima_novasemibold';
+// }
+// .ForgotHeading h1 img {
+//     position: absolute;
+//     margin-top: 10px;
+//     margin-left: 15px;
+// }
+// .Returnto {
+//     text-align: center;
+//     color: #8d8d8d;
+//     margin-top: 30px;
+// }
+// .Error {
+//     color: #e86352;
+//     line-height: 21px;
+//     padding-top: 10px;
+//     letter-spacing: 0.6px;
+// }
+// .GreatHeading h1 {
+//     font-size: 48px;
+//     color: #99c540;
+//     padding-top: 165px;
+// }
+// .GreatHeading p.GreatBold {
+//     padding-top: 10px;
+//     font-size: 27px;
+//     font-family: 'proxima_nova_rgbold';
+// }
+// .GreatHeading p.GreatText {
+//     padding-top: 10px;
+//     font-size: 27px;
+// }
+// /*-- Forgot Password start --*/
 
-/*-- Email Recovery start --*/
-.RecoveryRightMain {
-    background-image: asset-url("email-recovery-web.png");
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 768px;
-    float: right;
-    background-size: cover;
-    background-position: center center;
-}
-.EmailRecoveryHeading {
+// /*-- Email Recovery start --*/
+// .RecoveryRightMain {
+//     background-image: asset-url("email-recovery-web.png");
+//     background-repeat: no-repeat;
+//     width: 50%;
+//     height: 768px;
+//     float: right;
+//     background-size: cover;
+//     background-position: center center;
+// }
+// .EmailRecoveryHeading {
 
-}
-.EmailRecoveryHeading h1 {
-    padding-top: 35px;
-    line-height: 36px;
-}
-.EmailRecoveryHeading p {
-    color: #e86352;
-    line-height: 21px;
-    padding-top: 30px;
-    letter-spacing: 0.6px;
-    display: none;
-}
-.EmailRecoveryHeading a.EmailInText {
-    color: #52b5f9;
-    font-family: 'proxima_novasemibold';
-}
-.Email2 {
-    width: 49%;
-    float: left;
-}
-.Email2 label {
-    font-size: 18px;
-    color: #343434;
-    font-family: 'proxima_novasemibold';
-    width:100%;
-}
-.Email2 input {
-    width: 91%;
-    margin-top: 15px;
-    height: 49px !important;
-    border: 1px solid  #dbdbdb;
-    font-size: 17px;
-    padding: 0 0 0 15px;
-    border-radius: 2px;
-}
-.Email2 select {
-    width: 91%;
-    margin-top: 15px;
-    height: 50px;
-    border: 1px solid  #dbdbdb;
-    font-size: 17px;
-    padding: 0 0 0 15px;
-    border-radius: 2px;
-}
-.EmailRecoveryText {
-    text-align: left;
-    color: #7f7f7f;
-    margin-top: 20px;
-    line-height: 22px;
-}
-.RecoverLogin {
-    padding-top: 135px;
-}
-/*-- Email Recovery start --*/
+// }
+// .EmailRecoveryHeading h1 {
+//     padding-top: 35px;
+//     line-height: 36px;
+// }
+// .EmailRecoveryHeading p {
+//     color: #e86352;
+//     line-height: 21px;
+//     padding-top: 30px;
+//     letter-spacing: 0.6px;
+//     display: none;
+// }
+// .EmailRecoveryHeading a.EmailInText {
+//     color: #52b5f9;
+//     font-family: 'proxima_novasemibold';
+// }
+// .Email2 {
+//     width: 49%;
+//     float: left;
+// }
+// .Email2 label {
+//     font-size: 18px;
+//     color: #343434;
+//     font-family: 'proxima_novasemibold';
+//     width:100%;
+// }
+// .Email2 input {
+//     width: 91%;
+//     margin-top: 15px;
+//     height: 49px !important;
+//     border: 1px solid  #dbdbdb;
+//     font-size: 17px;
+//     padding: 0 0 0 15px;
+//     border-radius: 2px;
+// }
+// .Email2 select {
+//     width: 91%;
+//     margin-top: 15px;
+//     height: 50px;
+//     border: 1px solid  #dbdbdb;
+//     font-size: 17px;
+//     padding: 0 0 0 15px;
+//     border-radius: 2px;
+// }
+// .EmailRecoveryText {
+//     text-align: left;
+//     color: #7f7f7f;
+//     margin-top: 20px;
+//     line-height: 22px;
+// }
+// .RecoverLogin {
+//     padding-top: 135px;
+// }
+// /*-- Email Recovery start --*/
 
-@media only screen and (max-width: 320px) {
-    body {
-        font-size: 14px;
-        color: #000000;
-        background: #fff;
-        font-family: 'proxima_nova_rgregular';
-    }
-    .LoginRightMorning {
-        background-image: asset-url("mornnig-mobile.png");
-        background-size: 100% 100%;
-        width: 320px;
-        height: 135px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightAfternoon {
-        background-image: asset-url("afternoon-mobile.png");
-        background-size: 100% 100%;
-        width: 320px;
-        height: 135px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightEvening {
-        background-image: asset-url("evening-mobile.png");
-        background-size: 100% 100%;
-        width: 320px;
-        height: 135px;
-        position: absolute;
-        top: 0;
-    }
-    .Logo {
-        background-image: asset-url("mobile-logo.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        cursor: pointer;
-        height: 66px;
-    }
-    .LoginLeftMain {
-        width: 100%;
-        margin-top: 185px;
-    }
-    .LeftSide {
-        padding-left: 0px;
-        padding-top: 0px;
-        width: 100%;
-        padding-bottom: 100px;
-    }
-    .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .LoginForm {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
-        padding-top: 25px;
-        font-size: 21px;
-    }
-    .WelcomeHeading, .ForgotHeading p, .EmailRecoveryHeading p {
-        letter-spacing: 0px;
-    }
-    .GreatHeading h1 {
-        font-size: 32px;
-        color: #99c540;
-        padding-top: 25px;
-    }
-    .Email {
-        margin-top: 25px;
-    }
-    .Email label {
-        font-size: 14px;
-    }
-    .Email input {
-        margin-top: 15px;
-        height: 40px;
-        font-size: 14px;
-        padding-left: 10px;
-        border-radius: 2px;
-    }
-    .CheckboxPassword label {
-        margin-left: 5px;
-    }
-    .ForgotRightMain {
-        background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
-        background-size: 100% 100%;
-        width: 320px;
-        height: 135px;
-        position: absolute;
-        top: 0;
-    }
-    .RecoveryRightMain {
-        background-image: asset-url("email-recovery-mobile.png");
-        background-size: 100% 100%;
-        width: 320px;
-        height: 135px;
-        position: absolute;
-        top: 0;
-    }
-    .ForgotHeading h1 img {
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 15px;
-        width: 15px;
-    }
-}
-@media only screen and (max-width: 360px) {
-    body {
-        font-size: 14px;
-        color: #000000;
-        background: #fff;
-    }
-    .LoginRightMorning {
-        background-image: asset-url("mornnig-mobile.png");
-        background-size: 100% 100%;
-        width: 360px;
-        height: 152px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightAfternoon {
-        background-image: asset-url("afternoon-mobile.png");
-        background-size: 100% 100%;
-        width: 360px;
-        height: 152px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightEvening {
-        background-image: asset-url("evening-mobile.png");
-        background-size: 100% 100%;
-        width: 360px;
-        height: 152px;
-        position: absolute;
-        top: 0;
-    }
-    .ForgotRightMain {
-        background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
-        background-size: 100% 100%;
-        width: 360px;
-        height: 152px;
-        position: absolute;
-        top: 0;
-    }
-    .RecoveryRightMain {
-        background-image: asset-url("email-recovery-mobile.png");
-        background-size: 100% 100%;
-        width: 360px;
-        height: 152px;
-        position: absolute;
-        top: 0;
-    }
-    .Logo {
-        background-image: asset-url("mobile-logo.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        cursor: pointer;
-        height: 59px;
-    }
-    .LoginLeftMain {
-        width: 100%;
-        margin-top: 185px;
-    }
-    .LeftSide {
-        padding-left: 0px;
-        padding-top: 0px;
-        width: 100%;
-        padding-bottom: 100px;
-    }
-    .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
-        width: 85%;
-        margin: 0 auto;
-    }
-    .LoginForm {
-        width: 85%;
-        margin: 0 auto;
-    }
-    .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
-        padding-top: 25px;
-        font-size: 21px;
-    }
-    .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
-        letter-spacing: 0px;
-    }
-    .Email {
-        margin-top: 25px;
-    }
-    .Email label {
-        font-size: 14px;
-    }
-    .Email input {
-        margin-top: 15px;
-        height: 40px;
-        font-size: 14px;
-        padding-left: 10px;
-        border-radius: 2px;
-    }
-    .CheckboxPassword label {
-        margin-left: 5px;
-    }
-    .ForgotHeading h1 img {
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 15px;
-        width: 15px;
-    }
-    .GreatHeading h1 {
-        font-size: 48px;
-        color: #99c540;
-        padding-top: 25px;
-        text-align: center;
-    }
-    .GreatHeading p.GreatBold {
-        font-size: 20px;
-    }
-    .GreatHeading p.GreatText {
-        padding-top: 10px;
-        font-size: 20px;
-    }
-    .RecoverLogin {
-        padding-top: 25px;
-    }
-}
-@media only screen and (min-width: 361px) and (max-width: 414px) {
-    body {
-        font-size: 14px;
-        color: #000000;
-        background: #fff;
-    }
-    .LoginRightMorning {
-        background-image: asset-url("mornnig-mobile.png");
-        background-size: 100% 100%;
-        width: 375px;
-        height: 158px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightAfternoon {
-        background-image: asset-url("afternoon-mobile.png");
-        background-size: 100% 100%;
-        width: 375px;
-        height: 158px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightEvening {
-        background-image: asset-url("evening-mobile.png");
-        background-size: 100% 100%;
-        width: 375px;
-        height: 158px;
-        position: absolute;
-        top: 0;
-    }
-    .ForgotRightMain {
-        background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
-        background-size: 100% 100%;
-        width: 375px;
-        height: 158px;
-        position: absolute;
-        top: 0;
-    }
-    .RecoveryRightMain {
-        background-image: asset-url("email-recovery-mobile.png");
-        background-size: 100% 100%;
-        width: 375px;
-        height: 158px;
-        position: absolute;
-        top: 0;
-    }
-    .Logo {
-        background-image: asset-url("mobile-logo.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        cursor: pointer;
-        height: 59px;
-    }
-    .LoginLeftMain {
-        width: 100%;
-        margin-top: 185px;
-    }
-    .LeftSide {
-        padding-left: 0px;
-        padding-top: 0px;
-        width: 100%;
-        padding-bottom: 100px;
-    }
-    .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .LoginForm {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
-        padding-top: 25px;
-        font-size: 21px;
-    }
-    .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
-        letter-spacing: 0px;
-    }
-    .Email {
-        margin-top: 25px;
-    }
-    .Email label {
-        font-size: 14px;
-    }
-    .Email input {
-        margin-top: 15px;
-        height: 40px;
-        font-size: 14px;
-        padding-left: 10px;
-        border-radius: 2px;
-    }
-    .CheckboxPassword label {
-        margin-left: 5px;
-    }
-    .ForgotHeading h1 img {
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 15px;
-        width: 15px;
-    }
-    .GreatHeading h1 {
-        font-size: 48px;
-        color: #99c540;
-        padding-top: 25px;
-        text-align: center;
-    }
-    .GreatHeading p.GreatBold {
-        font-size: 20px;
-    }
-    .GreatHeading p.GreatText {
-        padding-top: 10px;
-        font-size: 20px;
-    }
-    .RecoverLogin {
-        padding-top: 25px;
-    }
-}
-@media only screen and (min-width: 376px) and (max-width: 414px) {
-    body {
-        font-size: 16px;
-        color: #000000;
-        background: #fff;
-    }
-    .LoginRightMorning {
-        background-image: asset-url("mornnig-mobile.png");
-        background-size: 100% 100%;
-        width: 414px;
-        height: 175px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightAfternoon {
-        background-image: asset-url("afternoon-mobile.png");
-        background-size: 100% 100%;
-        width: 414px;
-        height: 175px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightEvening {
-        background-image: asset-url("evening-mobile.png");
-        background-size: 100% 100%;
-        width: 414px;
-        height: 175px;
-        position: absolute;
-        top: 0;
-    }
-    .ForgotRightMain {
-        background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
-        background-size: 100% 100%;
-        width: 414px;
-        height: 175px;
-        position: absolute;
-        top: 0;
-    }
-    .RecoveryRightMain {
-        background-image: asset-url("email-recovery-mobile.png");
-        background-size: 100% 100%;
-        width: 414px;
-        height: 175px;
-        position: absolute;
-        top: 0;
-    }
-    .Logo {
-        background-image: asset-url("mobile-logo.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        cursor: pointer;
-    }
-    .LoginLeftMain {
-        width: 100%;
-        margin-top: 200px;
-    }
-    .LeftSide {
-        padding-left: 0px;
-        padding-top: 0px;
-        width: 100%;
-        padding-bottom: 100px;
-    }
-    .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
-        width: 85%;
-        margin: 0 auto;
-    }
-    .LoginForm {
-        width: 85%;
-        margin: 0 auto;
-    }
-    .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
-        padding-top: 30px;
-        font-size: 24px;
-    }
-    .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
-        letter-spacing: 0px;
-    }
-    .Email {
-        margin-top: 25px;
-    }
-    .Email label {
-        font-size: 16px;
-    }
-    .Email input {
-        margin-top: 15px;
-        height: 45px;
-        font-size: 16px;
-        padding-left: 10px;
-        border-radius: 2px;
-    }
-    .CheckboxPassword label {
-        margin-left: 5px;
-    }
-    .ForgotHeading h1 img {
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 15px;
-        width: 15px;
-    }
-    .GreatHeading h1 {
-        font-size: 48px;
-        color: #99c540;
-        padding-top: 25px;
-        text-align: center;
-    }
-    .GreatHeading p.GreatBold {
-        font-size: 20px;
-    }
-    .GreatHeading p.GreatText {
-        padding-top: 10px;
-        font-size: 20px;
-    }
-    .RecoverLogin {
-        padding-top: 25px;
-    }
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    body {
-        font-size: 16px;
-        color: #000000;
-        background: #fff;
-    }
-    .LoginRightMorning {
-        background-image: asset-url("mornnig-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 270px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightAfternoon {
-        background-image: asset-url("afternoon-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 270px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightEvening {
-        background-image: asset-url("evening-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 270px;
-        position: absolute;
-        top: 0;
-    }
-    .ForgotRightMain {
-        background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
-        background-size: 100% 100%;
-        width: 100%;
-        height: 270px;
-        position: absolute;
-        top: 0;
-    }
-    .RecoveryRightMain {
-        background-image: asset-url("email-recovery-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 270px;
-        position: absolute;
-        top: 0;
-    }
-    .Logo {
-        background-image: asset-url("mobile-logo.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        cursor: pointer;
-        height: 62px;
-    }
-    .LoginLeftMain {
-        width: 100%;
-        margin-top: 325px;
-    }
-    .LeftSide {
-        padding-left: 0px;
-        padding-top: 0px;
-        width: 100%;
-        padding-bottom: 100px;
-    }
-    .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
-        width: 65%;
-        margin: 0 auto;
-    }
-    .LoginForm {
-        width: 65%;
-        margin: 0 auto;
-    }
-    .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
-        padding-top: 30px;
-        font-size: 24px;
-    }
-    .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
-        letter-spacing: 0px;
-    }
-    .Email {
-        margin-top: 25px;
-    }
-    .Email label {
-        font-size: 16px;
-    }
-    .Email input {
-        margin-top: 15px;
-        height: 45px;
-        font-size: 16px;
-        padding-left: 10px;
-        border-radius: 2px;
-    }
-    .CheckboxPassword label {
-        margin-left: 5px;
-    }
-    .ForgotHeading h1 img {
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 15px;
-        width: 15px;
-    }
-    .RecoverLogin {
-        padding-top: 35px;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-        font-size: 16px;
-        color: #000000;
-        background: #fff;
-    }
-    .LoginRightMorning {
-        background-image: asset-url("mornnig-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 325px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightAfternoon {
-        background-image: asset-url("afternoon-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 325px;
-        position: absolute;
-        top: 0;
-    }
-    .LoginRightEvening {
-        background-image: asset-url("evening-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 325px;
-        position: absolute;
-        top: 0;
-    }
-    .ForgotRightMain {
-        background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
-        background-size: 100% 100%;
-        width: 100%;
-        height: 325px;
-        position: absolute;
-        top: 0;
-    }
-    .RecoveryRightMain {
-        background-image: asset-url("email-recovery-mobile.png");
-        background-size: 100% 100%;
-        width: 100%;
-        height: 325px;
-        position: absolute;
-        top: 0;
-    }
-    .Logo {
-        background-image: asset-url("mobile-logo.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        cursor: pointer;
-        height: 62px;
-    }
-    .LoginLeftMain {
-        width: 100%;
-        margin-top: 370px;
-    }
-    .LeftSide {
-        padding-left: 0px;
-        padding-top: 0px;
-        width: 100%;
-        padding-bottom: 100px;
-    }
-    .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
-        width: 50%;
-        margin: 0 auto;
-    }
-    .LoginForm {
-        width: 50%;
-        margin: 0 auto;
-    }
-    .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
-        padding-top: 30px;
-        font-size: 24px;
-    }
-    .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
-        letter-spacing: 0px;
-    }
-    .Email {
-        margin-top: 25px;
-    }
-    .Email label {
-        font-size: 16px;
-    }
-    .Email input {
-        margin-top: 15px;
-        height: 45px;
-        font-size: 16px;
-        padding-left: 10px;
-        border-radius: 2px;
-    }
-    .CheckboxPassword label {
-        margin-left: 5px;
-    }
-    .ForgotHeading h1 img {
-        position: absolute;
-        margin-top: 10px;
-        margin-left: 15px;
-        width: 15px;
-    }
-    .RecoverLogin {
-        padding-top: 35px;
-    }
-}
+// @media only screen and (max-width: 320px) {
+//     body {
+//         font-size: 14px;
+//         color: #000000;
+//         background: #fff;
+//         font-family: 'proxima_nova_rgregular';
+//     }
+//     .LoginRightMorning {
+//         background-image: asset-url("mornnig-mobile.png");
+//         background-size: 100% 100%;
+//         width: 320px;
+//         height: 135px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightAfternoon {
+//         background-image: asset-url("afternoon-mobile.png");
+//         background-size: 100% 100%;
+//         width: 320px;
+//         height: 135px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightEvening {
+//         background-image: asset-url("evening-mobile.png");
+//         background-size: 100% 100%;
+//         width: 320px;
+//         height: 135px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .Logo {
+//         background-image: asset-url("mobile-logo.png");
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         margin: 0 auto;
+//         cursor: pointer;
+//         height: 66px;
+//     }
+//     .LoginLeftMain {
+//         width: 100%;
+//         margin-top: 185px;
+//     }
+//     .LeftSide {
+//         padding-left: 0px;
+//         padding-top: 0px;
+//         width: 100%;
+//         padding-bottom: 100px;
+//     }
+//     .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
+//         width: 80%;
+//         margin: 0 auto;
+//     }
+//     .LoginForm {
+//         width: 80%;
+//         margin: 0 auto;
+//     }
+//     .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
+//         padding-top: 25px;
+//         font-size: 21px;
+//     }
+//     .WelcomeHeading, .ForgotHeading p, .EmailRecoveryHeading p {
+//         letter-spacing: 0px;
+//     }
+//     .GreatHeading h1 {
+//         font-size: 32px;
+//         color: #99c540;
+//         padding-top: 25px;
+//     }
+//     .Email {
+//         margin-top: 25px;
+//     }
+//     .Email label {
+//         font-size: 14px;
+//     }
+//     .Email input {
+//         margin-top: 15px;
+//         height: 40px;
+//         font-size: 14px;
+//         padding-left: 10px;
+//         border-radius: 2px;
+//     }
+//     .CheckboxPassword label {
+//         margin-left: 5px;
+//     }
+//     .ForgotRightMain {
+//         background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
+//         background-size: 100% 100%;
+//         width: 320px;
+//         height: 135px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .RecoveryRightMain {
+//         background-image: asset-url("email-recovery-mobile.png");
+//         background-size: 100% 100%;
+//         width: 320px;
+//         height: 135px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .ForgotHeading h1 img {
+//         position: absolute;
+//         margin-top: 10px;
+//         margin-left: 15px;
+//         width: 15px;
+//     }
+// }
+// @media only screen and (max-width: 360px) {
+//     body {
+//         font-size: 14px;
+//         color: #000000;
+//         background: #fff;
+//     }
+//     .LoginRightMorning {
+//         background-image: asset-url("mornnig-mobile.png");
+//         background-size: 100% 100%;
+//         width: 360px;
+//         height: 152px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightAfternoon {
+//         background-image: asset-url("afternoon-mobile.png");
+//         background-size: 100% 100%;
+//         width: 360px;
+//         height: 152px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightEvening {
+//         background-image: asset-url("evening-mobile.png");
+//         background-size: 100% 100%;
+//         width: 360px;
+//         height: 152px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .ForgotRightMain {
+//         background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
+//         background-size: 100% 100%;
+//         width: 360px;
+//         height: 152px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .RecoveryRightMain {
+//         background-image: asset-url("email-recovery-mobile.png");
+//         background-size: 100% 100%;
+//         width: 360px;
+//         height: 152px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .Logo {
+//         background-image: asset-url("mobile-logo.png");
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         margin: 0 auto;
+//         cursor: pointer;
+//         height: 59px;
+//     }
+//     .LoginLeftMain {
+//         width: 100%;
+//         margin-top: 185px;
+//     }
+//     .LeftSide {
+//         padding-left: 0px;
+//         padding-top: 0px;
+//         width: 100%;
+//         padding-bottom: 100px;
+//     }
+//     .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
+//         width: 85%;
+//         margin: 0 auto;
+//     }
+//     .LoginForm {
+//         width: 85%;
+//         margin: 0 auto;
+//     }
+//     .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
+//         padding-top: 25px;
+//         font-size: 21px;
+//     }
+//     .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
+//         letter-spacing: 0px;
+//     }
+//     .Email {
+//         margin-top: 25px;
+//     }
+//     .Email label {
+//         font-size: 14px;
+//     }
+//     .Email input {
+//         margin-top: 15px;
+//         height: 40px;
+//         font-size: 14px;
+//         padding-left: 10px;
+//         border-radius: 2px;
+//     }
+//     .CheckboxPassword label {
+//         margin-left: 5px;
+//     }
+//     .ForgotHeading h1 img {
+//         position: absolute;
+//         margin-top: 10px;
+//         margin-left: 15px;
+//         width: 15px;
+//     }
+//     .GreatHeading h1 {
+//         font-size: 48px;
+//         color: #99c540;
+//         padding-top: 25px;
+//         text-align: center;
+//     }
+//     .GreatHeading p.GreatBold {
+//         font-size: 20px;
+//     }
+//     .GreatHeading p.GreatText {
+//         padding-top: 10px;
+//         font-size: 20px;
+//     }
+//     .RecoverLogin {
+//         padding-top: 25px;
+//     }
+// }
+// @media only screen and (min-width: 361px) and (max-width: 414px) {
+//     body {
+//         font-size: 14px;
+//         color: #000000;
+//         background: #fff;
+//     }
+//     .LoginRightMorning {
+//         background-image: asset-url("mornnig-mobile.png");
+//         background-size: 100% 100%;
+//         width: 375px;
+//         height: 158px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightAfternoon {
+//         background-image: asset-url("afternoon-mobile.png");
+//         background-size: 100% 100%;
+//         width: 375px;
+//         height: 158px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightEvening {
+//         background-image: asset-url("evening-mobile.png");
+//         background-size: 100% 100%;
+//         width: 375px;
+//         height: 158px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .ForgotRightMain {
+//         background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
+//         background-size: 100% 100%;
+//         width: 375px;
+//         height: 158px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .RecoveryRightMain {
+//         background-image: asset-url("email-recovery-mobile.png");
+//         background-size: 100% 100%;
+//         width: 375px;
+//         height: 158px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .Logo {
+//         background-image: asset-url("mobile-logo.png");
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         margin: 0 auto;
+//         cursor: pointer;
+//         height: 59px;
+//     }
+//     .LoginLeftMain {
+//         width: 100%;
+//         margin-top: 185px;
+//     }
+//     .LeftSide {
+//         padding-left: 0px;
+//         padding-top: 0px;
+//         width: 100%;
+//         padding-bottom: 100px;
+//     }
+//     .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
+//         width: 80%;
+//         margin: 0 auto;
+//     }
+//     .LoginForm {
+//         width: 80%;
+//         margin: 0 auto;
+//     }
+//     .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
+//         padding-top: 25px;
+//         font-size: 21px;
+//     }
+//     .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
+//         letter-spacing: 0px;
+//     }
+//     .Email {
+//         margin-top: 25px;
+//     }
+//     .Email label {
+//         font-size: 14px;
+//     }
+//     .Email input {
+//         margin-top: 15px;
+//         height: 40px;
+//         font-size: 14px;
+//         padding-left: 10px;
+//         border-radius: 2px;
+//     }
+//     .CheckboxPassword label {
+//         margin-left: 5px;
+//     }
+//     .ForgotHeading h1 img {
+//         position: absolute;
+//         margin-top: 10px;
+//         margin-left: 15px;
+//         width: 15px;
+//     }
+//     .GreatHeading h1 {
+//         font-size: 48px;
+//         color: #99c540;
+//         padding-top: 25px;
+//         text-align: center;
+//     }
+//     .GreatHeading p.GreatBold {
+//         font-size: 20px;
+//     }
+//     .GreatHeading p.GreatText {
+//         padding-top: 10px;
+//         font-size: 20px;
+//     }
+//     .RecoverLogin {
+//         padding-top: 25px;
+//     }
+// }
+// @media only screen and (min-width: 376px) and (max-width: 414px) {
+//     body {
+//         font-size: 16px;
+//         color: #000000;
+//         background: #fff;
+//     }
+//     .LoginRightMorning {
+//         background-image: asset-url("mornnig-mobile.png");
+//         background-size: 100% 100%;
+//         width: 414px;
+//         height: 175px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightAfternoon {
+//         background-image: asset-url("afternoon-mobile.png");
+//         background-size: 100% 100%;
+//         width: 414px;
+//         height: 175px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightEvening {
+//         background-image: asset-url("evening-mobile.png");
+//         background-size: 100% 100%;
+//         width: 414px;
+//         height: 175px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .ForgotRightMain {
+//         background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
+//         background-size: 100% 100%;
+//         width: 414px;
+//         height: 175px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .RecoveryRightMain {
+//         background-image: asset-url("email-recovery-mobile.png");
+//         background-size: 100% 100%;
+//         width: 414px;
+//         height: 175px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .Logo {
+//         background-image: asset-url("mobile-logo.png");
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         margin: 0 auto;
+//         cursor: pointer;
+//     }
+//     .LoginLeftMain {
+//         width: 100%;
+//         margin-top: 200px;
+//     }
+//     .LeftSide {
+//         padding-left: 0px;
+//         padding-top: 0px;
+//         width: 100%;
+//         padding-bottom: 100px;
+//     }
+//     .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
+//         width: 85%;
+//         margin: 0 auto;
+//     }
+//     .LoginForm {
+//         width: 85%;
+//         margin: 0 auto;
+//     }
+//     .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
+//         padding-top: 30px;
+//         font-size: 24px;
+//     }
+//     .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
+//         letter-spacing: 0px;
+//     }
+//     .Email {
+//         margin-top: 25px;
+//     }
+//     .Email label {
+//         font-size: 16px;
+//     }
+//     .Email input {
+//         margin-top: 15px;
+//         height: 45px;
+//         font-size: 16px;
+//         padding-left: 10px;
+//         border-radius: 2px;
+//     }
+//     .CheckboxPassword label {
+//         margin-left: 5px;
+//     }
+//     .ForgotHeading h1 img {
+//         position: absolute;
+//         margin-top: 10px;
+//         margin-left: 15px;
+//         width: 15px;
+//     }
+//     .GreatHeading h1 {
+//         font-size: 48px;
+//         color: #99c540;
+//         padding-top: 25px;
+//         text-align: center;
+//     }
+//     .GreatHeading p.GreatBold {
+//         font-size: 20px;
+//     }
+//     .GreatHeading p.GreatText {
+//         padding-top: 10px;
+//         font-size: 20px;
+//     }
+//     .RecoverLogin {
+//         padding-top: 25px;
+//     }
+// }
+// @media only screen and (min-width: 480px) and (max-width: 767px) {
+//     body {
+//         font-size: 16px;
+//         color: #000000;
+//         background: #fff;
+//     }
+//     .LoginRightMorning {
+//         background-image: asset-url("mornnig-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 270px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightAfternoon {
+//         background-image: asset-url("afternoon-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 270px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightEvening {
+//         background-image: asset-url("evening-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 270px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .ForgotRightMain {
+//         background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 270px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .RecoveryRightMain {
+//         background-image: asset-url("email-recovery-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 270px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .Logo {
+//         background-image: asset-url("mobile-logo.png");
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         margin: 0 auto;
+//         cursor: pointer;
+//         height: 62px;
+//     }
+//     .LoginLeftMain {
+//         width: 100%;
+//         margin-top: 325px;
+//     }
+//     .LeftSide {
+//         padding-left: 0px;
+//         padding-top: 0px;
+//         width: 100%;
+//         padding-bottom: 100px;
+//     }
+//     .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
+//         width: 65%;
+//         margin: 0 auto;
+//     }
+//     .LoginForm {
+//         width: 65%;
+//         margin: 0 auto;
+//     }
+//     .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
+//         padding-top: 30px;
+//         font-size: 24px;
+//     }
+//     .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
+//         letter-spacing: 0px;
+//     }
+//     .Email {
+//         margin-top: 25px;
+//     }
+//     .Email label {
+//         font-size: 16px;
+//     }
+//     .Email input {
+//         margin-top: 15px;
+//         height: 45px;
+//         font-size: 16px;
+//         padding-left: 10px;
+//         border-radius: 2px;
+//     }
+//     .CheckboxPassword label {
+//         margin-left: 5px;
+//     }
+//     .ForgotHeading h1 img {
+//         position: absolute;
+//         margin-top: 10px;
+//         margin-left: 15px;
+//         width: 15px;
+//     }
+//     .RecoverLogin {
+//         padding-top: 35px;
+//     }
+// }
+// @media only screen and (min-width: 768px) and (max-width: 1024px) {
+//     body {
+//         font-size: 16px;
+//         color: #000000;
+//         background: #fff;
+//     }
+//     .LoginRightMorning {
+//         background-image: asset-url("mornnig-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 325px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightAfternoon {
+//         background-image: asset-url("afternoon-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 325px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .LoginRightEvening {
+//         background-image: asset-url("evening-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 325px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .ForgotRightMain {
+//         background-image: asset-url("forgot-h-mobile.png"); /*-- forgot-t-web --*/
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 325px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .RecoveryRightMain {
+//         background-image: asset-url("email-recovery-mobile.png");
+//         background-size: 100% 100%;
+//         width: 100%;
+//         height: 325px;
+//         position: absolute;
+//         top: 0;
+//     }
+//     .Logo {
+//         background-image: asset-url("mobile-logo.png");
+//         background-size: 100% 100%;
+//         background-repeat: no-repeat;
+//         margin: 0 auto;
+//         cursor: pointer;
+//         height: 62px;
+//     }
+//     .LoginLeftMain {
+//         width: 100%;
+//         margin-top: 370px;
+//     }
+//     .LeftSide {
+//         padding-left: 0px;
+//         padding-top: 0px;
+//         width: 100%;
+//         padding-bottom: 100px;
+//     }
+//     .WelcomeHeading, .ForgotHeading, .EmailRecoveryHeading, .GreatHeading {
+//         width: 50%;
+//         margin: 0 auto;
+//     }
+//     .LoginForm {
+//         width: 50%;
+//         margin: 0 auto;
+//     }
+//     .WelcomeHeading h1, .ForgotHeading h1, .EmailRecoveryHeading h1 {
+//         padding-top: 30px;
+//         font-size: 24px;
+//     }
+//     .WelcomeHeading p, .ForgotHeading p, .EmailRecoveryHeading p {
+//         letter-spacing: 0px;
+//     }
+//     .Email {
+//         margin-top: 25px;
+//     }
+//     .Email label {
+//         font-size: 16px;
+//     }
+//     .Email input {
+//         margin-top: 15px;
+//         height: 45px;
+//         font-size: 16px;
+//         padding-left: 10px;
+//         border-radius: 2px;
+//     }
+//     .CheckboxPassword label {
+//         margin-left: 5px;
+//     }
+//     .ForgotHeading h1 img {
+//         position: absolute;
+//         margin-top: 10px;
+//         margin-left: 15px;
+//         width: 15px;
+//     }
+//     .RecoverLogin {
+//         padding-top: 35px;
+//     }
+// }
