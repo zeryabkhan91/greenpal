@@ -626,7 +626,10 @@ p{
 .hover_menu {
 	display: none;
 }
-
+.submit_the_details_btn a:hover {
+	background-color: #FF7001;
+	transition: 0.5s ease-in-out;
+}
 
 
 
