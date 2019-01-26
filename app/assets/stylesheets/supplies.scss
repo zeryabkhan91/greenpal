@@ -283,11 +283,11 @@ p{
 	background-color: rgb(219, 239, 212);
 	padding-top: 5px;
 	padding-bottom: 5px;
-	width: 178px;
+	width: 195px;
 	margin: 0 auto;
 	border-radius: 5px;
 	font-size: 15px;
-	font-family: 'ProximaNova-Regular';
+	font-family: 'proxima_novasemibold';
 }
 .blod_f_e{
     font-family: 'proxima_nova_rgbold';
@@ -702,10 +702,10 @@ p{
 		padding: 10px 30px 40px 30px;
 	}
 	.small_head h4 {
-		font-size: 19px !important;
+		font-size: 19px;
 	}
 	.redTime h4 {
-		font-size: 17px;
+		font-size: 18px;
 		padding-left: 5px;
 		padding-right: 5px;
 	}
@@ -718,6 +718,18 @@ p{
 		padding: 14px 35px;
 		border-radius: 27px;
 		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.small_head {
+		font-size: 17px !important;
+	}
+	.inner_box_with_logo_one p, .inner_box_with_logo_tow p {
+		font-size: 16px;
+	}
+	.view_this_park_btn a {
+		font-size: 18px;
 	}
 }
 
