@@ -2,22 +2,82 @@
 
 /* #### Custam Font Add #### */
 
-@font-face {
+/* @font-face {
     font-family: 'ProximaBold';
-    src: font-url('ProximaNova-Bold.ttf') format('truetype');
+    src: url('ProximaNova-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'ProximaSBold';
-	src: font-url('ProximaSBold.otf') format('truetype');
+	src: url('ProximaSBold.otf') format('truetype');
 }
 @font-face {
 	font-family: 'ProximaRegular';
-	src: font-url('ProximaNova-Regular.ttf') format('truetype');
+	src: url('ProximaNova-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'ProximaLight';
-    src: font-url('ProximaNova-Light.ttf') format('truetype');
+    src: url('ProximaNova-Light.ttf') format('truetype');
+} */
+
+
+
+/*----- Proxima Nova -----*/
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: font-url('proxima_nova_semi_bold-webfont.woff2') format('woff2'),
+    font-url('proxima_nova_semi_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+@font-face {
+    font-family: 'proxima_novalight';
+    src: font-url('proxima_nova_light-webfont.woff2') format('woff2'),
+    font-url('proxima_nova_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+	src: font-url('proxima_nova_regular-webfont.woff2') format('woff2'),
+    font-url('proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*----- Proxima  Nova Bold -----*/
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: font-url('proxima-nova-bold-58bd78a0818eb-webfont.woff2') format('woff2'),
+    font-url('proxima-nova-bold-58bd78a0818eb-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----- Proxima  Nova Bold -----*/
+
+/*----- Proxima Regular Nova -----*/
+@font-face {
+    font-family: 'ProximaNova-Regular';
+	src: font-url('ProximaNova-Regular.woff') format('woff'),
+    font-url('proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----- Proxima Nova Regular  -----*/
+
+/*----- Proxima Sami bold Nova -----*/
+@font-face {
+    font-family: 'proxima_novasemibold';
+	src: font-url('proxima_nova_semi_bold-webfont.woff2') format('woff2'),
+    font-url('proxima_nova_semi_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*----- Proxima Sami bold Nova -----*/
+
+/*----- Proxima Nova -----*/
+
 
 body{
     margin: 0;
@@ -28,12 +88,12 @@ p{
     margin: 0;
 }
 .font_b_span{
-	font-family: 'ProximaBold';
+	font-family: 'proxima_nova_rgbold';
 }
 .main_navbar_bg_clr{
     background-color: #00a3e7;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 29px;
 	padding-left: 50px;
 	padding-right: 50px;
 }
@@ -53,10 +113,12 @@ p{
 .nabar_left_part {
 	float: left;
 	width: 280px;
+	padding-top: 3px;
 }
 .nabar_right_part {
 	float: right;
 	width: 830px;
+	
 }
 .clear{
     clear: both;
@@ -68,11 +130,12 @@ p{
 }
 .nabar_right_part ul li {
 	display: inline;
-	padding-right: 25px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 .nabar_right_part ul li a{
     font-size: 16px;
-    font-family: 'ProximaSBold';
+    font-family: 'proxima_novasemibold';
     color: #ddeefa;
 	text-decoration: none; 
 	transition: 0.5s;
@@ -86,7 +149,7 @@ p{
 }
 .navbar_logig_btn a {
 	font-size: 16px;
-	font-family: 'ProximaBold';
+	font-family: 'proxima_novasemibold';
 	color: #ffffff;
 	text-decoration: none;
 	background-color: #ff9000;
@@ -123,14 +186,16 @@ p{
 }
 .left_saidbar ul li a {
 	text-decoration: none;
-	color: #878787;
-	font-size: 17px;
-	font-family: 'ProximaSBold';
+	/*color: #787878;*/
+	color: #424242;
+	font-size: 18px;
 	display: inline-block;
 	width: 100%;
-	padding: 12px 15px 12px 18px;
+	padding: 12px 15px 12px 15px;
 	transition: 0.5s;
 	border-left: 3px solid transparent;
+	font-family: 'ProximaNova-Regular';
+	
 }
 .left_saidbar.only_desktop ul li a:anth-child(1) {
 	background-color: red;
@@ -139,9 +204,9 @@ p{
 
 
 .left_saidbar ul li a:hover{
-  transition: 0.5s;
-  color: #00a3e7;
-  border-left: 3px solid #00a3e7;
+    transition: 0.5s;
+    color: #00a3e7;
+    border-left: 3px solid #00a3e7;
     
 }
 .pad_r_e_7 {
@@ -151,10 +216,10 @@ p{
 	top: 4px;
 }
 .right_main_inner_part {
-	width: 644px;
+	width: 650px;
 	float: right;
 	border: 1px solid #e5e5e5;
-	padding: 40px 40px 0px 40px;
+	padding: 34px 40px 0px 40px;
 	border-radius: 3px;
 }
 .inner_box_with_logo_tow {
@@ -175,28 +240,30 @@ p{
 	font-size: 29px;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: 'ProximaSBold';
+	font-family: 'proxima_nova_rgbold';
 	color: #4a4a4a;
 }
 .right_main_inner_part_heading_part h3 img {
 	padding-right: 7px;
 }
 .right_main_inner_part_heading_part h5 {
-	font-size: 25px;
+	font-size: 24px;
+    padding-right: 35px;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-family: 'ProximaRegular';
+	font-family: 'ProximaNova-Regular';
 	padding-top: 7px;
 	padding-bottom: 7px;
 	color: #343434;
 }
 .right_main_inner_part_heading_part p {
 	font-size: 18px;
-	padding-left: 25px;
-	padding-right: 25px;
-	font-family: 'ProximaSBold';
-	color: #4a4a4a;
+	padding-left: 20px;
+	padding-right: 42px;
+	/*color: #787878;*/
+	color: #181919;
 	line-height: 25px;
+	font-family: 'ProximaNova-Regular';
 }
 .mobile_menu {
 	display: none;
@@ -214,30 +281,30 @@ p{
 .redTime h4 {
 	color: #23a805;
 	background-color: rgb(219, 239, 212);
-	padding-top: 6px;
-	padding-bottom: 6px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	width: 178px;
 	margin: 0 auto;
 	border-radius: 5px;
-	font-family: 'ProximaRegular';
-	font-size: 16px;
+	font-size: 15px;
+	font-family: 'ProximaNova-Regular';
 }
 .blod_f_e{
-    font-family: 'ProximaBold';
+    font-family: 'proxima_nova_rgbold';
 }
 .small_head h4 {
 	background-color: transparent;
 	font-size: 16px;
-	font-family: 'ProximaSBold';
+	font-family: 'proxima_novasemibold';
 	color: #000000;
-	padding-top: 14px;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 8px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 .inner_box_with_logo_one p, .inner_box_with_logo_tow p {
 	font-size: 16px;
-	font-family: 'ProximaRegular';
+	font-family: 'ProximaNova-Regular';
 	color: #181919;
 	margin: 0;
 	line-height: 24px;
@@ -259,7 +326,7 @@ p{
 	border-radius: 20px;
     font-size: 16px;
     color: #ffffff;
-	font-family: 'ProximaSBold';
+	font-family: 'proxima_novasemibold';
 	transition: 0.5s;
 }
 .view_this_park_btn a:hover{
@@ -282,7 +349,7 @@ p{
 	font-size: 28px;
 	color: #ffffff;
 	line-height: 43px;
-	font-family: 'ProximaSBold';
+	font-family: 'proxima_novasemibold';
 }
 .submit_the_details_btn a {
 	text-decoration: none;
@@ -293,7 +360,7 @@ p{
 	background: #f68519;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9b00', endColorstr='#ff6f00',GradientType=0 );
     color: #fff;
-    font-family: 'ProximaSBold';
+    font-family: 'proxima_nova_rgbold';
 }
 .submit_the_details_btn {
 	margin-top: 30px;
@@ -311,8 +378,8 @@ p{
 .footer_copy_right_left p {
 	color: #afadad;
 	font-size: 13.5px;
-	font-family: 'ProximaSBold';
-	line-height: 24px;
+	line-height: 22px;
+	font-family: 'proxima_novasemibold';
 }
 .footer_copy_right_left {
 	width: 50%;
@@ -426,28 +493,39 @@ p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Legal_Insurance_text_mob {
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #fff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.Legal_Insurance_text_mob ul {
+	margin: 0;
+	padding: 0;
+}
+.Legal_Insurance_text_mob ul li {
+	display: inline;
+	padding: 10px 15px;
+}
+.Legal_Insurance_text_mob ul li a {
+	text-decoration: none;
+	font-size: 17px;
+	color: #787878;
+	font-family: 'ProximaNova-Regular';
+	transition: 0.5s;
+	padding-bottom: 14px;
+	border-bottom: 2px solid transparent;
+}
+.Legal_Insurance_text_mob ul li a:hover{
+	border-bottom: 2px solid #00a3e7;
+	padding-bottom: 14px;
+	transition: 0.5s;
+	color: #00a3e7;
+}
+.edit_e_mobile {
+    display: none;
+}
 
 @media (min-width: 1024px) and (max-width: 1400px) {
 
@@ -468,8 +546,10 @@ p{
 	}
 	.mobile_menu span img {
 		float: right;
-		width: 25px;
+		width: 21px;
 		cursor: pointer;
+		position: relative;
+		top: 2px;
 	}
 	.nabar_right_part {
 		display: none;
@@ -479,7 +559,7 @@ p{
 		width: 50%;
 	}
 	.main_navbar_bg_clr {
-		padding: 20px 30px;
+		padding: 18px 20px;
 	}
 	.only_desktop{
 		display: none;
@@ -531,7 +611,7 @@ p{
 		width: 100%;
 	}
 	.nabar_left_part a img {
-		width: 150%;
+		width: 160%;
 	}
 	.Legal_Insurance_text_mob {
 		display: block;
@@ -548,12 +628,16 @@ p{
 	}
 	.footer_sec {
 		background-color: #3b3b3b;
-		padding-top: 25px;
-		padding-bottom: 25px;
+		padding-top: 15px;
+		padding-bottom: 20px;
 		position: relative;
 	}
 	.imga {
-		top: -14px;
+		top: -11px;
+		
+	}
+	.box_logo {
+		padding-bottom: 15px;
 		
 	}
 	.only_mobile{
@@ -601,25 +685,39 @@ p{
 		color: #898989;
 		font-size: 10px;
 	}
-	
-	
-	
-	
-
-}
-
-@media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-	.footer_top_bg_sec p {
-		padding: 27px 27px 0px 20px;
-		font-size: 13px;
+	.footer_top_bg_sec.only_mobile.not_show_mobile {
+		display: none;
 	}
-	.main_body_container {
-		width: 70%;
-		background-color: #f3f1f1;
-		padding: 0;
-		margin: 30px;
+	.edit_e_mobile {
+		text-align: right;
+		position: relative;
+		right: -10px;
+		top: 5px;
+	}
+	.edit_e_mobile {
+		display: block;
+	}
+	.inner_box_with_logo_one,
+	.inner_box_with_logo_tow {
+		padding: 10px 30px 40px 30px;
+	}
+	.small_head h4 {
+		font-size: 19px !important;
+	}
+	.redTime h4 {
+		font-size: 17px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.inner_box_with_logo_one p, .inner_box_with_logo_tow p {
+		font-size: 18px;
+		line-height: 26px;
+		padding-bottom: 10px;
+	}
+	.view_this_park_btn a {
+		padding: 14px 35px;
+		border-radius: 27px;
+		font-size: 20px;
 	}
 }
 
@@ -632,8 +730,3 @@ p{
 }
 
 
-
-
-
-	
-	
